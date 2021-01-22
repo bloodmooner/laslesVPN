@@ -1,0 +1,43 @@
+.features {
+    padding: 95px 0px 125px 0px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 510px 427px;
+        justify-content: space-between;
+
+    }
+    &__item {
+        margin-top: 55px;
+    }
+    &__title {
+        width: 383px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        color: #4f5665;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    &__list {
+        margin-top: 20px;
+        list-style-type: none;
+        padding-left: 30px;
+        li {
+            position: relative;;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #4f5665;
+            &:before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: 4px;
+                width: 21px;
+                height: 21px;
+                background: url("../../icons/features/v-green.svg") center center / cover no-repeat;
+            }
+        }
+    }
+}

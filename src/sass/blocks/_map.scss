@@ -1,0 +1,30 @@
+.map {
+    padding-bottom: 97px;
+    background-color: #fefefe;
+    &__title {
+        width: 385px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        width: 555px;
+        text-align: center;
+        margin: 20px auto 0px auto;
+    }
+    &__global {
+        width: 1060px;
+        margin: 155px auto 0px auto;
+        img {
+            width: 100%;
+        }
+    }
+    &__sponsors {
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: 200px 155px 187px 171px;
+        grid-template-rows: 112px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}

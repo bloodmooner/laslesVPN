@@ -1,0 +1,33 @@
+.subscribe {
+    position: relative;;
+    &__wrapper {
+        position: absolute;
+        top: -120px;
+        width: 1140px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 60px 70px;
+        display: grid;
+        grid-template-columns: 370px 250px;
+        grid-template-rows: 120px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    &__btn {
+        width: 250px;
+        height: 60px;
+        background-color: #F53838;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    &__offer {
+        position: relative;
+    }
+}

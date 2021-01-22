@@ -1,0 +1,110 @@
+.reviews {
+    padding: 0px 0px 200px 0px;
+    background-color: #fefefe;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: 230px;
+        column-gap: 50px;
+    }
+    &__item {
+        padding: 30px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        &-active {
+            border: 2px solid #F53838;
+        }
+    }
+    &__header {
+        display: grid;
+        grid-template-columns: 182px 50px;
+        grid-template-rows: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__descr {
+        display: grid;
+        grid-template-columns: 50px 142px;
+        justify-content: space-between;
+        column-gap: 20px;
+        align-items: center;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 18px;
+        color: #0b132a;
+    }
+    &__location {
+        font-weight: 400;
+        font-size: 14px;
+        color: #4f5665;
+    }
+    &__text {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #0b132a;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            display: block;
+            color: #0b132a;
+        }
+    }
+    &__controls {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 135px 140px;
+        grid-template-rows: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__dots {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__dot {
+        width: 15px;
+        height: 15px;
+        background-color: #DDE0E4;
+        border-radius: 100%;
+        &-active {
+            width: 45px;
+            height: 15px;
+            background-color: #F53838;
+            border-radius: 30px;
+        }
+    }
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        &-active {
+            background-color: #F53838;
+        }
+    }
+    &__title {
+        width: 447px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__subtitle {
+        width: 555px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 20px auto 0px auto;
+    }
+    
+}
