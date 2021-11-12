@@ -5,17 +5,29 @@
         width: 385px;
         text-align: center;
         margin: 0 auto;
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &__subtitle {
         width: 555px;
         text-align: center;
         margin: 20px auto 0px auto;
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &__global {
         width: 1060px;
         margin: 155px auto 0px auto;
         img {
             width: 100%;
+        }
+        @include for-desktop-up {
+            width: 100%;
+        }
+        @include for-phone-only {
+            margin: 25px auto 0 auto;
         }
     }
     &__sponsors {
@@ -25,6 +37,25 @@
         grid-template-rows: 112px;
         align-items: center;
         justify-content: space-between;
-
+        @include for-tablet-landscape-up {
+            grid-template-columns: 185px 142px 171px 160px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 145px 117px 126px 115px;
+        }
+        @include for-phone-only {
+            margin-top: 15px;
+            grid-template-columns: 134px 141px;
+        }
+    }
+    &__item {
+        img {
+            @include for-tablet-landscape-up {
+                width: 100%;
+            }
+        }
+    }
+    @include for-phone-only {
+        padding-bottom: 60px;
     }
 }

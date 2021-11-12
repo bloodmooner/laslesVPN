@@ -7,6 +7,24 @@
         grid-template-columns: repeat(3, 400px);
         grid-template-rows: 230px;
         column-gap: 50px;
+        @include for-desktop-up {
+            grid-template-columns: repeat(3, 265px);
+            grid-template-rows: 370px;
+        }
+        @include for-tablet-landscape-up {
+            grid-template-columns: repeat(3, 205px);
+            grid-template-rows: 465px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: repeat(3,172px);
+            grid-template-rows: 580px;
+            column-gap: 10px;
+        }
+        @include for-phone-only {
+            grid-template-rows: repeat(3, 355px);
+            grid-template-columns: 1fr;
+            row-gap: 15px;
+        }
     }
     &__item {
         padding: 30px;
@@ -22,6 +40,25 @@
         grid-template-rows: 50px;
         justify-content: space-between;
         align-items: center;
+        @include for-desktop-up {
+            grid-template-columns: 182px;
+            grid-template-rows: 50px 50px;
+        }
+        @include for-tablet-landscape-up {
+            width: 130px;
+            grid-template-columns: 130px;
+        }
+        @include for-tablet-portrait-up {
+            width: 110px;
+            grid-template-columns: 110px;
+        }
+        @include for-phone-only {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     &__descr {
         display: grid;
@@ -29,16 +66,64 @@
         justify-content: space-between;
         column-gap: 20px;
         align-items: center;
+        @include for-tablet-landscape-up {
+            margin-top: 10px;
+            grid-template-columns: 130px;
+            grid-template-rows: 50px;
+            row-gap: 2px;
+            width: 130px;
+        }
+        @include for-tablet-portrait-up {
+            margin-top: 10px;
+            grid-template-columns: 110px;
+            grid-template-rows: 50px;
+            row-gap: 2px;
+            width: 110px;
+        }
+        @include for-phone-only {
+            display: grid;
+            grid-template-columns: 50px 142px;
+            justify-content: space-between;
+            column-gap: 20px;
+            align-items: center;
+        }
     }
     &__name {
         font-weight: 500;
         font-size: 18px;
         color: #0b132a;
+        @include for-tablet-landscape-up {
+            margin-top: 7px;
+            font-size: 15px;
+            text-align: center;
+        }
+        @include for-tablet-portrait-up {
+            margin-top: 7px;
+            font-size: 13px;
+            text-align: center;
+        }
+        @include for-phone-only {
+            font-weight: 500;
+            font-size: 18px;
+            color: #0b132a;
+        }
     }
     &__location {
         font-weight: 400;
         font-size: 14px;
         color: #4f5665;
+        @include for-tablet-landscape-up {
+            text-align: center;
+        }
+        @include for-tablet-portrait-up {
+            text-align: center;
+            font-size: 12px;
+        }
+        @include for-phone-only {
+            font-weight: 400;
+            font-size: 14px;
+            color: #4f5665;
+        }
     }
     &__text {
         margin-top: 15px;
@@ -46,6 +131,13 @@
         font-size: 16px;
         line-height: 30px;
         color: #0b132a;
+        @include for-phone-only {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #0b132a;
+        }
     }
     &__rating {
         display: flex;
@@ -56,6 +148,22 @@
             font-size: 16px;
             display: block;
             color: #0b132a;
+        }
+        @include for-desktop-up {
+            width: 50px;
+        }
+        @include for-tablet-landscape-up {
+            margin: 30px auto 0px auto;
+            text-align: center;
+            width: 40px;
+        }
+        @include for-tablet-portrait-up {
+            margin: 30px auto 0px auto;
+            text-align: center;
+            width: 40px;
+        }
+        @include for-phone-only {
+            margin: 20px 0px 0px 0px;
         }
     }
     &__controls {
@@ -98,6 +206,9 @@
         width: 447px;
         margin: 0 auto;
         text-align: center;
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &__subtitle {
         width: 555px;
@@ -105,6 +216,28 @@
         font-weight: 400;
         font-size: 16px;
         margin: 20px auto 0px auto;
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     
+    &__img {
+        
+        img {
+            @include for-tablet-landscape-up {
+                width: 100%;
+            }
+            @include for-tablet-portrait-up {
+                width: 100%;
+            }
+        }
+        @include for-tablet-landscape-up {
+            width: 50px;
+            margin: 0 auto;
+        }
+        @include for-tablet-portrait-up {
+            width: 50px;
+            margin: 0 auto;
+        }
+    }
 }

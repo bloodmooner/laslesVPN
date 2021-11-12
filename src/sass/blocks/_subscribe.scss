@@ -12,6 +12,24 @@
         grid-template-rows: 120px;
         justify-content: space-between;
         align-items: center;
+        @include for-desktop-up {
+            width: 900px;
+        }
+        @include for-tablet-landscape-up {
+            width: 720px;
+        }
+        @include for-tablet-portrait-up {
+            width: 540px;
+            top: -170px;
+            grid-template-columns: 400px;
+            grid-template-rows: 155px;
+        }
+        @include for-phone-only {
+            grid-template-columns: 280px;
+            grid-template-rows: 240px;
+            padding: 50px 10px;
+            width: 300px;
+        }
     }
     &__subtitle {
         font-weight: 400;
