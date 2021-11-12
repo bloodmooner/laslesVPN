@@ -26,6 +26,10 @@
         @include for-desktop-up {
             width: 100%;
         }
+        @include for-tablet-landscape-up {
+            width: 100%;
+            margin-top: 60px;
+        }
         @include for-phone-only {
             margin: 25px auto 0 auto;
         }
@@ -54,6 +58,9 @@
                 width: 100%;
             }
         }
+    }
+    @include for-tablet-landscape-up {
+        padding-bottom: 60px;
     }
     @include for-phone-only {
         padding-bottom: 60px;

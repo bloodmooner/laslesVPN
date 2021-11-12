@@ -63,6 +63,9 @@
             }
         }
     }
+    @include for-tablet-landscape-up {
+        padding: 60px 0;
+    }
     @include for-tablet-portrait-up {
         padding: 75px 0 75px 0;
     }

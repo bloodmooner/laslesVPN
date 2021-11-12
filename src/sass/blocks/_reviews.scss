@@ -12,7 +12,7 @@
             grid-template-rows: 370px;
         }
         @include for-tablet-landscape-up {
-            grid-template-columns: repeat(3, 205px);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 465px;
         }
         @include for-tablet-portrait-up {

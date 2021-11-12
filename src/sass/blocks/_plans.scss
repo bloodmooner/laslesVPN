@@ -135,4 +135,7 @@
             width: 145px;
         }
     }
+    @include for-tablet-landscape-up {
+        padding: 60px 0;
+    }
 }

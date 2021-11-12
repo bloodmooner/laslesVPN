@@ -154,7 +154,11 @@
             width: 100%;
             position: absolute;
             right: -70px;
+            @include for-tablet-landscape-up {
+                right: 0px
+            }
         }
+        
         @include for-tablet-portrait-up {
             height: 340px;
             margin-top: 70px;
@@ -180,6 +184,10 @@
         grid-template-columns: repeat(3, 145px);
         grid-template-rows: 65px;
         justify-content: space-between;
+        @include for-tablet-landscape-up {
+            margin-top: 100px;
+            grid-template-columns: repeat(3, 1fr);
+        }
         @include for-phone-only {
             margin: 0 auto;
             width: 160px;
@@ -189,6 +197,9 @@
         }
     }
     &__icon {
+        &-image {
+            width: 100%;
+        }
         @include for-phone-only {
             width: 55px;
             margin: 0 auto;
@@ -202,6 +213,10 @@
         align-items: center;
         @include for-desktop-up {
             grid-template-columns: 55px 70px;
+        }
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-direction: column;
         }
         @include for-phone-only {
             grid-template-columns: 100%;
@@ -217,6 +232,9 @@
             font-weight: 400;
             font-size: 20px;
             color: #4f5665;
+        }
+        @include for-tablet-landscape-up {
+            margin-top: 20px;
         }
         @include for-phone-only {
             width: 100px;

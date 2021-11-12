@@ -8,6 +8,7 @@
         justify-content: space-between;
         @include for-tablet-landscape-up {
             grid-template-columns: 217px 468px;
+            padding-top: 190px;
         }
         @include for-tablet-portrait-up {
             grid-template-columns: 540px;
@@ -83,6 +84,7 @@
         }
         @include for-phone-only {
             grid-template-columns: 94px 109px 96px;
+            width: 300px;
         }
     }
     &__name {
@@ -96,6 +98,10 @@
     &__aside {
         @include for-phone-only {
             margin-top: 20px;
+            width: 300px;
         }
+    }
+    @include for-tablet-landscape-up {
+        min-height: 520px;
     }
 }
