@@ -35,7 +35,8 @@
             margin-top: 60px;
         }
         @include for-phone-only {
-            margin: 25px auto 0 auto;
+            width: 100%;
+            margin-top: 30px;
         }
     }
     &__sponsors {
@@ -55,7 +56,8 @@
         }
         @include for-phone-only {
             margin-top: 15px;
-            grid-template-columns: 134px 141px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
         }
     }
     &__item {

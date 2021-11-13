@@ -28,10 +28,11 @@
             padding: 50px;
         }
         @include for-phone-only {
+            top: -195px;
             grid-template-columns: 280px;
             grid-template-rows: 240px;
-            padding: 50px 10px;
-            width: 300px;
+            padding: 50px 20px;
+            width: 290px;
         }
     }
     &__title {

@@ -13,6 +13,9 @@
         @include for-tablet-portrait-up {
             grid-template-columns: 100%;
         }
+        @include for-phone-only {
+            grid-template-columns: 100%;
+        }
     }
     &__img {
         img {
@@ -37,6 +40,13 @@
         @include for-tablet-landscape-up {
             width: 100%;
         }
+        @include for-phone-only {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__descr {
+        position: relative;
     }
     &__text {
         margin-top: 20px;
@@ -44,6 +54,9 @@
         color: #4f5665;
         line-height: 30px;
         font-size: 16px;
+        @include for-phone-only {
+            text-align: center;
+        }
     }
     &__list {
         margin-top: 20px;
