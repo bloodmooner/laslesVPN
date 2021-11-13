@@ -21,10 +21,11 @@
             grid-template-columns: 2fr 1fr;
         }
         @include for-tablet-portrait-up {
-            width: 540px;
+            width: 500px;
             top: -170px;
-            grid-template-columns: 400px;
+            grid-template-columns: 1fr;
             grid-template-rows: 155px;
+            padding: 50px;
         }
         @include for-phone-only {
             grid-template-columns: 280px;
@@ -33,10 +34,18 @@
             width: 300px;
         }
     }
+    &__title {
+        @include for-tablet-portrait-up {
+            text-align: center;
+        }
+    }
     &__subtitle {
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
+        @include for-tablet-portrait-up {
+            text-align: center;
+        }
     }
     &__btn {
         width: 250px;
@@ -48,6 +57,10 @@
         border-radius: 10px;
         @include for-tablet-landscape-up {
             width: 100%;
+        }
+        @include for-tablet-portrait-up {
+            display: block;
+            margin: 20px auto 0 auto;
         }
     }
     &__offer {

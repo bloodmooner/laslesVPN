@@ -11,7 +11,7 @@
             padding-top: 190px;
         }
         @include for-tablet-portrait-up {
-            grid-template-columns: 540px;
+            grid-template-columns: 100%;
         }
         @include for-phone-only {
             grid-template-columns: 1fr;

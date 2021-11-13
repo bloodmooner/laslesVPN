@@ -30,6 +30,10 @@
             width: 100%;
             margin-top: 60px;
         }
+        @include for-tablet-portrait-up {
+            width: 100%;
+            margin-top: 60px;
+        }
         @include for-phone-only {
             margin: 25px auto 0 auto;
         }
@@ -45,7 +49,9 @@
             grid-template-columns: 185px 142px 171px 160px;
         }
         @include for-tablet-portrait-up {
-            grid-template-columns: 145px 117px 126px 115px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 30px;
         }
         @include for-phone-only {
             margin-top: 15px;
@@ -64,5 +70,8 @@
     }
     @include for-phone-only {
         padding-bottom: 60px;
+    }
+    &__item-image {
+        width: 100%;
     }
 }
