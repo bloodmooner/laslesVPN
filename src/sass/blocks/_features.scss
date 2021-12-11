@@ -73,7 +73,8 @@
             position: relative;;
             font-weight: 400;
             font-size: 14px;
-            line-height: 43px;
+            line-height: 30px;
+            margin-top: 15px;
             color: #4f5665;
             @include for-tablet-portrait-up {
                 line-height: 30px;
