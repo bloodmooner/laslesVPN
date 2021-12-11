@@ -291,13 +291,13 @@
         top: 50%;
         transform: translate3D(-50%, -50%, 0);
         display: grid;
-        grid-template-columns: 55px 65px;
+        grid-template-columns: 55px 90px;
         grid-template-rows: 65px;
         align-items: center;
         column-gap: 36px;
         
         @include for-desktop-up {
-            grid-template-columns: 55px 70px;
+            grid-template-columns: 55px 90px;
         }
         @include for-tablet-landscape-up {
             display: flex;
