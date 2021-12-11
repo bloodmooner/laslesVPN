@@ -56,6 +56,9 @@
         font-weight: 700;
         font-size: 16px;
         border-radius: 10px;
+        &:hover {
+            background-color: #f42040;
+        }
         @include for-tablet-landscape-up {
             width: 100%;
         }

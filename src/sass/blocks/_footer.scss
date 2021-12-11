@@ -24,6 +24,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: #0B132A;
+        &:hover {
+            color: #0B132A;
+        }
         div {
             font-weight: 500;
             font-size: 20px;
@@ -67,6 +71,13 @@
             margin: 30px 0;
         }
     }
+    &__copyright-link {
+        color: #F53838;
+        &:hover {
+            color: #F53838;
+            text-decoration: underline;
+        }
+    }
     &__menu {
         display: grid;
         grid-template-columns: 74px 123px 121px;
@@ -99,6 +110,9 @@
         @include for-phone-only {
             font-size: 14px;
         }
+    }
+    &__list-link {
+        color: #4F5665;
     }
     &__aside {
         @include for-phone-only {
