@@ -16,9 +16,9 @@
             grid-template-rows: 465px;
         }
         @include for-tablet-portrait-up {
-            grid-template-columns: repeat(3,172px);
-            grid-template-rows: 580px;
-            column-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 10px;
         }
         @include for-phone-only {
             grid-template-rows: repeat(3, 355px);
@@ -30,6 +30,10 @@
         padding: 30px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
+        @include for-tablet-portrait-up {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         &-active {
             border: 2px solid #F53838;
         }
@@ -79,6 +83,7 @@
             grid-template-rows: 50px;
             row-gap: 2px;
             width: 110px;
+            margin-top: 46px;
         }
         @include for-phone-only {
             display: grid;
@@ -131,6 +136,9 @@
         font-size: 16px;
         line-height: 30px;
         color: #0b132a;
+        @include for-tablet-portrait-up {
+            margin-top: 0;
+        }
         @include for-phone-only {
             margin-top: 15px;
             font-weight: 400;
@@ -164,6 +172,7 @@
         }
         @include for-phone-only {
             margin: 20px 0px 0px 0px;
+            justify-content: start;
         }
     }
     &__controls {
@@ -228,6 +237,9 @@
         font-weight: 400;
         font-size: 16px;
         margin: 30px auto 0px auto;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
         @include for-phone-only {
             width: 100%;
         }

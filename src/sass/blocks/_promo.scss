@@ -86,6 +86,10 @@
                 margin-left: 10px;
                 font-size: 25px;
             }
+            @include for-phone-only {
+                margin-left: 10px;
+                font-size: 25px;
+            }
         }
     }
     &__list {
@@ -250,7 +254,7 @@
             grid-template-columns: repeat(3, 1fr);
         }
         @include for-tablet-portrait-up {
-            margin-top: 100px;
+            margin-top: 50px;
             grid-template-columns: repeat(3, 1fr);
         }
         @include for-phone-only {
@@ -274,6 +278,9 @@
         position: relative;
         height: 100%;
         border-right: 2px solid #EEEFF2;
+        @include for-phone-only {
+            border-right: none;
+        }
         &:nth-child(3) {
             border-right: none;
         }
@@ -295,6 +302,7 @@
         @include for-tablet-landscape-up {
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
         @include for-tablet-portrait-up {
             display: flex;
@@ -322,13 +330,18 @@
             margin-top: 20px;
         }
         @include for-tablet-portrait-up {
-            margin-top: 20px;
+            margin-top: 5px;
+            font-size: 20px;
+            text-align: center;
         }
         @include for-phone-only {
             width: 100px;
             margin: 0 auto;
             text-align: center;
         }
+    }
+    @include for-tablet-portrait-up {
+        padding: 50px 0 0 0;
     }
     @include for-phone-only {
         padding: 30px 0;

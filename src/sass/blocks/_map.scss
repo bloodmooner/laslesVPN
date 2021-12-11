@@ -13,6 +13,9 @@
         width: 555px;
         text-align: center;
         margin: 30px auto 0px auto;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
         @include for-phone-only {
             width: 100%;
         }

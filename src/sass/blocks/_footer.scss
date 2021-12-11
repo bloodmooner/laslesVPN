@@ -12,9 +12,11 @@
         }
         @include for-tablet-portrait-up {
             grid-template-columns: 100%;
+            padding-top: 220px;
         }
         @include for-phone-only {
             grid-template-columns: 1fr;
+            padding-top: 230px;
         }
     }
     &__logo {

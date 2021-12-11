@@ -11,6 +11,9 @@
         font-weight: 400;
         font-size: 16px;
         color: #4f5665;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
         @include for-phone-only {
             width: 100%;
         }
@@ -23,17 +26,21 @@
         grid-template-rows: 760px;
         justify-content: space-between;
         @include for-desktop-up {
+            width: 100%;
             grid-template-columns: repeat(3, 295px);
         }
         @include for-tablet-landscape-up {
+            width: 100%;
             grid-template-columns: repeat(3,235px);
         }
         @include for-tablet-portrait-up {
+            width: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
             row-gap: 30px;
         }
         @include for-phone-only {
+            width: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 715px);
             row-gap: 20px;
@@ -93,6 +100,14 @@
             font-size: 14px;
             line-height: 41px;
             color: #4f5665;
+            @include for-tablet-portrait-up {
+                line-height: 30px;
+                margin-top: 10px;
+            }
+            @include for-phone-only {
+                line-height: 30px;
+                margin-top: 5px;
+            }
             &:before {
                 content: "";
                 position: absolute;
