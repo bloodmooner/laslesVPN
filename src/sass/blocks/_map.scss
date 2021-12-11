@@ -12,7 +12,7 @@
     &__subtitle {
         width: 555px;
         text-align: center;
-        margin: 20px auto 0px auto;
+        margin: 30px auto 0px auto;
         @include for-phone-only {
             width: 100%;
         }

@@ -2,7 +2,7 @@
     min-height: 565px;
     background-color: #f8f8f8;
     &__wrapper {
-        padding-top: 230px;
+        padding-top: 148px;
         display: grid;
         grid-template-columns: 340px 570px;
         justify-content: space-between;
@@ -75,7 +75,7 @@
             li {
                 font-weight: 400;
                 font-size: 16px;
-                line-height: 30px;
+                line-height: 41px;
                 color: #4f5665;
                 @include for-phone-only {
                     font-size: 12px;
