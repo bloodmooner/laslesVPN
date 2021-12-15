@@ -3,10 +3,11 @@
     background-color: #fefefe;
     &__wrapper {
         margin-top: 60px;
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(3, 400px);
         grid-template-rows: 230px;
         column-gap: 50px;
+        position: relative; */
         @include for-desktop-up {
             grid-template-columns: repeat(3, 265px);
             grid-template-rows: 370px;
@@ -30,13 +31,24 @@
         padding: 30px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
+        width: 400px;
+        min-height: 280px;
+        height: 100%;
+        @include for-desktop-up {
+            min-height: 390px;
+            height: 100%;
+        }
+        @include for-tablet-landscape-up {
+            min-height: 455px;
+            height: 100%;
+        }
         @include for-tablet-portrait-up {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-        &-active {
+        /* &-active {
             border: 2px solid #F53838;
-        }
+        } */
     }
     &__header {
         display: grid;
@@ -53,8 +65,9 @@
             grid-template-columns: 130px;
         }
         @include for-tablet-portrait-up {
-            width: 110px;
-            grid-template-columns: 110px;
+            width: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 85px;
         }
         @include for-phone-only {
             display: grid;
@@ -84,6 +97,7 @@
             row-gap: 2px;
             width: 110px;
             margin-top: 46px;
+            margin: 0 auto;
         }
         @include for-phone-only {
             display: grid;
@@ -137,7 +151,8 @@
         line-height: 30px;
         color: #0b132a;
         @include for-tablet-portrait-up {
-            margin-top: 0;
+            margin-top: 10px;
+            text-align: center;
         }
         @include for-phone-only {
             margin-top: 15px;
@@ -265,3 +280,37 @@
         }
     }
 }
+
+
+.slick-slide {
+    margin: 0 27px;
+}
+    
+.slick-list {
+    margin: 0 -27px;
+}
+
+
+
+.slick-dots {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    li button{
+        border: none;
+        width: 15px;
+        height: 15px;
+        background-color: #DDE0E4;
+        border-radius: 100%;
+        font-size: 0;
+    }
+    .slick-active button  {
+        width: 45px;
+        height: 15px;
+        background-color: #F53838;
+        border-radius: 30px;
+    }
+}
+
+
